@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="程檩的个人主页 - 热爱前端开发与交互设计的大一学生">
+    <meta name="keywords" content="个人主页，前端开发，React, Node.js, 中国石油大学">
+    <meta name="author" content="程檩">
+    <title>程檩的个人主页 | Cheng Lin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
+</head>
+<body>
+    <div class="card">
+        <!-- 深色模式切换按钮 -->
+        <button class="theme-toggle" id="themeToggle" title="切换深色模式">🌙</button>
+
+        <!-- 头像区域 -->
+        <div class="avatar-container">
+            <img class="avatar" src="pic_20260110212306_0.jpg" alt="程檩头像">
+            <div class="avatar-glow"></div>
+        </div>
+
+        <!-- 姓名和头衔 -->
+        <h1 class="name">程檩</h1>
+        <p class="title">普通大一学生 · 前端开发爱好者</p>
+
+        <!-- 状态指示器 -->
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">✨ 学习中</span>
+        </div>
+
+        <!-- 简短介绍 -->
+        <p class="bio">
+            热爱前端开发与交互设计，正在学习 React 和 Node.js。
+            喜欢将创意转化为代码，享受解决问题的过程。
+            相信技术可以创造美好，代码能够改变世界。
+        </p>
+
+        <!-- 个性签名（自动轮播） -->
+        <div class="signature-container">
+            <span class="signature" id="signature">『根深者，必成参天』</span>
+        </div>
+
+        <!-- 技能标签 -->
+        <div class="skills">
+            <span class="skill-tag" data-category="personality">🎭 INFJ</span>
+            <span class="skill-tag" data-category="hobby">🎵 音乐</span>
+            <span class="skill-tag" data-category="hobby">🚶 散步</span>
+            <span class="skill-tag" data-category="hobby">🍜 美食</span>
+            <span class="skill-tag" data-category="hobby">✍️ 文字</span>
+            <span class="skill-tag" data-category="tech">💻 HTML/CSS</span>
+            <span class="skill-tag" data-category="tech">⚡ JavaScript</span>
+            <span class="skill-tag" data-category="tech">⚛️ React</span>
+            <span class="skill-tag" data-category="tech">🟢 Node.js</span>
+        </div>
+
+        <!-- 社交链接 -->
+        <div class="social-links">
+            <a href="mailto:jikehu03@gmail.com" class="social-link" title="Gmail">📧</a>
+            <a href="mailto:161331702@qq.com" class="social-link" title="QQ 邮箱">📫</a>
+            <a href="https://github.com" class="social-link" title="GitHub" target="_blank">🐙</a>
+            <a href="https://jike.com" class="social-link" title="即刻" target="_blank">📱</a>
+        </div>
+
+        <!-- 了解更多按钮 -->
+        <button class="btn" id="moreBtn">📖 了解更多</button>
+
+        <!-- 隐藏的详细信息 -->
+        <div class="extra-info" id="extraInfo">
+            <div class="info-section">
+                <h3>📍 基本信息</h3>
+                <p>🐧 QQ：161331702</p>
+                <p>📧 邮箱：161331702@qq.com</p>
+                <p>📍 城市：中国 · 青岛</p>
+                <p>🎓 学校：中国石油大学（华东）</p>
+                <p>🎂 星座：处女座</p>
+            </div>
+            
+            <div class="info-section">
+                <h3>🚀 技术栈</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-icon">🌐</span>
+                        <span class="tech-name">HTML5</span>
+                        <div class="tech-bar"><div class="tech-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🎨</span>
+                        <span class="tech-name">CSS3</span>
+                        <div class="tech-bar"><div class="tech-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚡</span>
+                        <span class="tech-name">JavaScript</span>
+                        <div class="tech-bar"><div class="tech-progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚛️</span>
+                        <span class="tech-name">React</span>
+                        <div class="tech-bar"><div class="tech-progress" style="width: 60%"></div></div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🟢</span>
+                        <span class="tech-name">Node.js</span>
+                        <div class="tech-bar"><div class="tech-progress" style="width: 50%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>🏆 项目经历</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h4>📱 个人主页</h4>
+                        <p>使用原生 HTML/CSS/JS 打造的响应式个人主页</p>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <div class="project-item">
+                        <h4>📝 待办事项应用</h4>
+                        <p>基于 React 的 Todo 应用，支持本地存储</p>
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">LocalStorage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 访问次数显示 -->
+        <div class="visit-counter" id="visitCounter">
+            👁️ 访问量：<span id="visitCount">0</span>
+        </div>
+
+        <!-- 留言板区域 -->
+        <div class="message-board">
+            <h3 class="message-title">✉️ 留言板</h3>
+            <div class="message-input-area">
+                <input type="text" id="messageName" placeholder="你的名字（可选）" maxlength="20">
+                <textarea id="messageText" placeholder="说点什么吧... 支持 emoji 哦～ ✨" rows="3" maxlength="200"></textarea>
+                <div class="message-actions">
+                    <button class="btn btn-secondary" id="clearBtn">🗑️ 清空</button>
+                    <button class="btn" id="sendMessage">✈️ 发送</button>
+                </div>
+            </div>
+            <div class="message-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="latest">最新</button>
+            </div>
+            <div class="message-list" id="messageList"></div>
+        </div>
+
+        <!-- 泡泡弹窗 -->
+        <div class="skill-popup" id="skillPopup">
+            <span class="bubble-text"></span>
+        </div>
+
+        <!-- 音乐播放器 -->
+        <div class="music-player" id="musicPlayer">
+            <div class="music-control">
+                <span class="music-icon">🎵</span>
+                <span class="music-status">点击播放</span>
+                <button class="play-btn" id="playBtn">▶️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 雪花效果容器 -->
+    <div class="snow-container" id="snowContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
